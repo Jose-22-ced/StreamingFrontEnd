@@ -1,0 +1,41 @@
+<div class="background">
+  <mat-toolbar color="primary">
+    <span>Streaming.tv</span>
+    <span class="example-spacer"></span>
+    <button mat-button (click)="salir()">SALIAR</button>
+  </mat-toolbar>
+  <br><br>
+  <div>
+    <span>REPORDE DE USUARIOS</span>
+  </div>
+  <br><br>
+  <div class="container">
+    <div *ngFor="let persona of personas">
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Usuario: {{persona.correo}} creado el: {{persona.fech_cre | date:"MMM d, y"}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="2" rowHeight="2:1">
+          <table style="width: 100%">
+            <tr>
+              <td style="width: 50%">
+                <h2>PLAN</h2>
+                <h3>Tipo: {{persona.plan?.tipo}}</h3>
+                <h3>Número de pefiles: {{persona.plan?.numpefil}}</h3>
+                <h3>Fecha de creación: {{persona.plan?.fech_cre | date:"MMM d, y"}}</h3>
+              </td>
+              <td style="width: 50%">
+                <h2>PEFILES</h2>
+                <li *ngFor="let perfil of persona.perfils">Nombre: {{perfil?.nombre}} Tipo: {{perfil?.tipo}} Fecha:{{perfil.fech_cre | date:"MMM d, y"}}</li>
+              </td>
+            </tr>
+          </table>
+        </mat-grid-list>
+      </mat-expansion-panel>
+    </div>
+
+  </div>
+</div>

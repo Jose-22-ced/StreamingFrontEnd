@@ -1,27 +1,23 @@
 # StreamingFrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Este proyecto fue realizado con [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
-## Development server
+## Dependencias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El proyecto de FrontEnd una las siguentes dependincias.
 
-## Code scaffolding
+1. Comando para depencencias node.
+2. Angular Material, propio de Angular CLI para mejorar
+   el estilo visual de los componentes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Comandos para instalar dependencias
 
-## Build
+1. `npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Nota: Al instalar Angular Material, seleccione en themes, "costum", y en animation "Si".
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Servidor de desarrollo
 
-## Running end-to-end tests
+Ejecute `ng serve` para un servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

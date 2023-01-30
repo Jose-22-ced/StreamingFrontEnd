@@ -1,0 +1,33 @@
+<div class="background">
+  <mat-card class="example-card">
+    <form [formGroup]="formGroup">
+      <mat-card-content>
+        <span>NUEVO PERFIL</span>
+        <br><br>
+        <mat-divider [inset]></mat-divider>
+        <br>
+        <button class="incon" mat-flat-button>
+          NUEVO
+        </button>
+        <br> <br>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="Jose :>" formControlName="nombre">
+        </mat-form-field>
+        <label id="example-radio-group-label">TIPO DE PERFIL</label> <br>
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          formControlName="tipo">
+          <mat-radio-button class="example-radio-button" [value]="'ADULTO'">PERFIL ADULTOS</mat-radio-button>
+          <mat-radio-button class="example-radio-button" [value]="'INFANTIL'">PERFIL INFANTIL</mat-radio-button>
+        </mat-radio-group>
+        <input type="text" formControlName="idpersona" [(ngModel)]="persona.idpersona" [hidden]="true">
+      </mat-card-content>
+      <mat-card-actions [align]="'end'">
+        <button mat-flat-button color="primary" [disabled]="formGroup.invalid" (click)="guardarPerfil()" style="margin-right:10px">GUARDAR</button>
+        <button mat-flat-button color="warn" (click)="cancelar()">CANCELAR</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

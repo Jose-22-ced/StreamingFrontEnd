@@ -1,0 +1,29 @@
+<div class="background">
+  <div class="titulo">
+    <span>Streaming.tv</span>
+  </div>
+  <div class="titulo">
+    <span>¿QUE ESTA VIENDO?</span>
+  </div>
+  <div class="perfil">
+    <div class="perfilicon" *ngFor="let perfil of perfiles">
+      <div>
+        <button mat-icon-button color="warn" (click)="eliminarperfil(perfil.idperfil)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <button class="incon" mat-flat-button (click)="ingresarperfil(perfil.idperfil)">
+        {{perfil.nombre?.charAt(0)}}
+      </button>
+      <div>
+        <h1>{{perfil.nombre}}</h1>
+      </div>
+    </div>
+    <div *ngIf="perfiles?.length==0" style="margin: 0 auto">
+      <span>Sin perfiles, agrege un nuevo perfil para disfrutar del contenido.</span>
+    </div>
+  </div>
+  <div class="titulo">
+    <button mat-flat-button color="primary" (click)="nuevoperfil()">AGREGAR NUEVO PERFIL</button>
+  </div>
+</div>

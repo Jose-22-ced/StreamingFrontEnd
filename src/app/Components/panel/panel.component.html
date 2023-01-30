@@ -1,0 +1,111 @@
+<div class="background">
+  <mat-toolbar color="primary">
+    <span>Streaming.tv</span>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button mat-button style="margin-left: 20px" (click)="pelicula()">Peliculas</button>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button mat-button (click)="serie()">Series</button>
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button class="incon" [matMenuTriggerFor]="menu" style="cursor: pointer">
+      {{perfil.nombre?.charAt(0)}}
+    </button>
+    <h2 style="cursor: pointer; margin-left: 5px" [matMenuTriggerFor]="menu">{{perfil.nombre}}</h2>
+    <mat-menu #menu="matMenu" class="custom-class">
+      <button mat-menu-item (click)="ajustesusuario()"><h1>Ajustes</h1></button>
+      <button mat-menu-item (click)="cambiardeperfil()"><h1>Cambiar de perfil</h1></button>
+      <button mat-menu-item (click)="cerrarSesion()"><h1>Cerrar Sesion</h1></button>
+    </mat-menu>
+  </mat-toolbar>
+  <div class="contenedor" *ngIf="media=='1'">
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10464/momias-cartel-10899.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10450/ant_man_y_la_avispa_quantumania-cartel-10893.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/9988/venus-cartel-10785.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10235/avatar_el_sentido_del_agua-cartel-10763.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10444/super_mario_bros_la_pelicula-cartel-10708.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10464/momias-cartel-10899.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10450/ant_man_y_la_avispa_quantumania-cartel-10893.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/9988/venus-cartel-10785.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10235/avatar_el_sentido_del_agua-cartel-10763.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10444/super_mario_bros_la_pelicula-cartel-10708.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10464/momias-cartel-10899.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10450/ant_man_y_la_avispa_quantumania-cartel-10893.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/9988/venus-cartel-10785.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.lahiguera.net/cinemania/pelicula/10235/avatar_el_sentido_del_agua-cartel-10763.jpg">
+    </div>
+  </div>
+  <div class="contenedor" *ngIf="media=='2'">
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/a1/46/52/a146523ca7dfa8b9eb88b62928fc5b48.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2021/12/el-juego-del-calamar-squid-game-serie-mejor-poster.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/The-walking-dead-series-tv-poster-amc.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/30/59/65/30596586e137aa9d9fb8a72e8b4fbde7.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/49/30/cc/4930cce3810e4aed89e7dc075e3e5eb1.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/a1/46/52/a146523ca7dfa8b9eb88b62928fc5b48.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2021/12/el-juego-del-calamar-squid-game-serie-mejor-poster.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/The-walking-dead-series-tv-poster-amc.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/30/59/65/30596586e137aa9d9fb8a72e8b4fbde7.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/49/30/cc/4930cce3810e4aed89e7dc075e3e5eb1.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/a1/46/52/a146523ca7dfa8b9eb88b62928fc5b48.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2021/12/el-juego-del-calamar-squid-game-serie-mejor-poster.jpg">
+    </div>
+    <div class="items">
+      <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/The-walking-dead-series-tv-poster-amc.jpg">
+    </div>
+    <div class="items">
+      <img src="https://i.pinimg.com/564x/30/59/65/30596586e137aa9d9fb8a72e8b4fbde7.jpg">
+    </div>
+  </div>
+</div>

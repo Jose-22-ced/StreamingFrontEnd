@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+.background {
+  background: repeating-linear-gradient(black,blueviolet, black);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+span{
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+}
+
+.titulo{
+  margin: 2% auto;
+  width: 100%;
+}
+
+.perfil {
+  display: flex;
+  flex-flow:wrap;
+  margin: 1% 5% 0% 5%;
+}
+.perfilicon{
+  margin: 0 auto;
+}
+
+.incon{
+  contain: content;
+  border-radius: 50%;
+  margin: 1% 1% 1% 1%;
+  width: 150px;
+  height:150px;
+  font-size: 100px;
+  background: repeating-radial-gradient(blueviolet, black);
+  border: 2px solid white;
+}
+
